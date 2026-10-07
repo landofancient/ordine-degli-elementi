@@ -4,26 +4,6 @@
   },
   "events": [
     {
-      "id": "esempio-novembre",
-      "title": "Esempio: evento di novembre",
-      "date": "2026-11-21T15:00",
-      "place": "Luogo da definire",
-      "element": "fuoco",
-      "summary": "Evento di esempio. Sostituiscilo con il tuo: descrivi in due righe ambientazione e cosa devono portare i giocatori.",
-      "price": "10 euro",
-      "formUrl": "INCOLLA-QUI-IL-LINK-DEL-GOOGLE-FORM"
-    },
-    {
-      "id": "esempio-dicembre",
-      "title": "Esempio: evento di dicembre",
-      "date": "2026-12-12T16:00",
-      "place": "Luogo da definire",
-      "element": "acqua",
-      "summary": "Secondo evento di esempio. Cancellalo o modificalo.",
-      "price": "",
-      "formUrl": "INCOLLA-QUI-IL-LINK-DEL-GOOGLE-FORM"
-    },
-    {
       "id": "aprile-2026",
       "title": "Evento di aprile 2026",
       "date": "2026-04-01T00:00",
