@@ -1,0 +1,63 @@
+{
+  "site": {
+    "generalFormUrl": "INCOLLA-QUI-IL-LINK-DEL-GOOGLE-FORM-GENERALE"
+  },
+  "events": [
+    {
+      "id": "esempio-novembre",
+      "title": "Esempio: evento di novembre",
+      "date": "2026-11-21T15:00",
+      "place": "Luogo da definire",
+      "element": "fuoco",
+      "summary": "Evento di esempio. Sostituiscilo con il tuo: descrivi in due righe ambientazione e cosa devono portare i giocatori.",
+      "price": "10 euro",
+      "formUrl": "INCOLLA-QUI-IL-LINK-DEL-GOOGLE-FORM"
+    },
+    {
+      "id": "esempio-dicembre",
+      "title": "Esempio: evento di dicembre",
+      "date": "2026-12-12T16:00",
+      "place": "Luogo da definire",
+      "element": "acqua",
+      "summary": "Secondo evento di esempio. Cancellalo o modificalo.",
+      "price": "",
+      "formUrl": "INCOLLA-QUI-IL-LINK-DEL-GOOGLE-FORM"
+    },
+    {
+      "id": "aprile-2026",
+      "title": "Evento di aprile 2026",
+      "date": "2026-04-01T00:00",
+      "dateLabel": "Aprile 2026",
+      "place": "",
+      "element": "aria",
+      "summary": "",
+      "price": "",
+      "formUrl": "",
+      "link": "https://facebook.com/events/s/land-of-ancient-la-tela-del-ra/4488115681469357/"
+    },
+    {
+      "id": "settembre-2025",
+      "title": "Evento di settembre 2025",
+      "date": "2025-09-01T00:00",
+      "dateLabel": "Settembre 2025",
+      "place": "",
+      "element": "aria",
+      "summary": "",
+      "price": "",
+      "formUrl": "",
+      "link": "https://facebook.com/events/s/land-of-ancient-giorni-importa/798457592673263/"
+    },
+    {
+      "id": "giugno-2025",
+      "title": "Evento di giugno 2025",
+      "date": "2025-06-01T00:00",
+      "dateLabel": "Giugno 2025",
+      "place": "",
+      "element": "aria",
+      "summary": "",
+      "price": "",
+      "formUrl": "",
+      "link": "https://facebook.com/events/s/land-of-ancient-nella-tana-del/1047893040645071/"
+    }
+  ]
+}
