@@ -16,6 +16,12 @@ fetch('data/events.json').then(r=>r.json()).then(({site,events})=>{
   }
   if($('#scelta')){
     const sel=$('#scelta'),opts=up.map(e=>[e.id,e.title,e.formUrl]);
+    const noForm=u=>!u||u.includes('INCOLLA');
+    if(!up.some(e=>!noForm(e.formUrl))&&noForm(site.generalFormUrl)){
+      sel.closest('section').querySelectorAll('label,br,select,p.meta').forEach(n=>n.hidden=true);
+      $('#modulo').innerHTML='<p>Le iscrizioni sono chiuse al momento. Si riapriranno con il prossimo evento: gli annunci escono su <a href="https://www.instagram.com/land_of_ancient">Instagram</a>.</p>';
+      return;
+    }
     opts.push(['generale','Altro / informazioni generali',site.generalFormUrl]);
     sel.innerHTML=opts.map(o=>`<option value="${o[0]}">${o[1]}</option>`).join('');
     const want=new URLSearchParams(location.search).get('evento');
