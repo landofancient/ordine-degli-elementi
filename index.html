@@ -1,28 +1,285 @@
-<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>L'Ordine degli Elementi | GRV e LARP fantasy – Land of Ancient</title><meta name="description" content="L'Ordine degli Elementi APS organizza giochi di ruolo dal vivo (GRV/LARP) fantasy nel mondo di Land of Ancient. Scopri eventi, ambientazione e come partecipare."><meta name="robots" content="index, follow">
-<link rel="canonical" href="https://landofancient.github.io/ordine-degli-elementi/"> <meta property="og:type" content="website"> <meta property="og:title" content="L'Ordine degli Elementi | GRV e LARP fantasy"> <meta property="og:description" content="Giochi di ruolo dal vivo (GRV/LARP) nel mondo fantasy di Land of Ancient. Eventi, ambientazione e avventure."> <meta property="og:url" content="https://landofancient.github.io/ordine-degli-elementi/"> <meta property="og:image" content="https://landofancient.github.io/ordine-degli-elementi/assets/copertina.jpg">
-<link rel="alternate" type="application/rss+xml" title="Eventi" href="feed.xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Uncial+Antiqua&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css"></head><body>
-<header><div class="wrap"><a class="brand" href="index.html">Ordine degli Elementi</a><nav>
-<a href="index.html" aria-current="page">Chi siamo</a><a href="eventi.html">Eventi</a><a href="foto.html">Foto</a><a href="iscrizioni.html">Iscriviti</a></nav></div></header><main>
-<div class="wrap hero"><div><h1>L'Ordine degli Elementi</h1>
-<p>L'Ordine degli Elementi APS è un'associazione che organizza giochi di ruolo dal vivo (GRV/LARP) fantasy. La nostra campagna, ambientata nel mondo di Land of Ancient, va avanti da più di dieci anni e la storia la scrivono i giocatori, evento dopo evento.</p>
-<a class="btn" href="eventi.html">Vedi gli eventi</a><a class="btn" href="iscrizioni.html">Iscriviti</a></div>
-<img src="assets/copertina.jpg" width="1000" height="1294" alt="Illustrazione di copertina: un gruppo di avventurieri attorno a un tavolo con una mappa, e il logo dell'Ordine degli Elementi"></div>
-<section><div class="wrap cols">
-<div><h2>Che cos'è un larp</h2><p>Il LARP (Live Action Role-Playing), o gioco di ruolo dal vivo (GRV), è un'esperienza in cui ogni partecipante interpreta un personaggio all'interno di un mondo immaginario. A differenza del gioco di ruolo da tavolo, ciò che accade non viene soltanto raccontato: viene vissuto e interpretato in prima persona. Ci si muove, si dialoga, si prende parte agli eventi e si affrontano le situazioni nei panni del proprio personaggio, con costumi e oggetti coerenti con l'ambientazione. Ogni scelta può cambiare il corso della storia.
-</p></div>
-<section><div class="wrap"><h2>Il mondo di Land of Ancient</h2>
-<p style="max-width:40rem">Il mondo fu forgiato da Gaiathur e dalla Civiltà dei Creatori, che lo permearono di una energia permanente: la magia. Oggi è diviso in quattro grandi regni, ognuno legato a un elemento. Secoli dopo la guerra contro i Manathull, creature di un altro piano che si cibano dell'energia del mondo, i segni del loro ritorno si moltiplicano e i popoli devono unirsi di nuovo.</p>
-<div class="porte" aria-label="I quattro grandi regni">
-<div class="porta" tabindex="0" style="--c:var(--fuoco)"><h2>Fuoco</h2><p>Il Patriarcato del Fuoco ha capitale a Pianfuocato. Il patriarca si sceglie tra i dieci Campioni, con una sfida all'ultimo sangue. Oggi il trono è vuoto e restano due Campioni a difendere il regno.</p></div>
-<div class="porta" tabindex="0" style="--c:var(--acqua)"><h2>Acqua</h2><p>Il Matriarcato dell'Acqua, guidato da Lady Awelta, fu il più colpito dalla grande guerra. Il suo popolo, aperto e pacifico, vive soprattutto di navigazione tra Acquaviva, Fontesacra e Grandefiume.</p></div>
-<div class="porta" tabindex="0" style="--c:var(--terra)"><h2>Terra</h2><p>Il Matriarcato della Terra ha capitale a Lagorotto, tra Boscofitto, Rocciascura e Riccocolle. Qui vivono morfici, elfi silvani, umani e nani, e qui sono comparsi i primi segnali del ritorno dei Manathull.</p></div>
-<div class="porta" tabindex="0" style="--c:var(--aria)"><h2>Aria</h2><p>Il Patriarcato dell'Aria ha capitale a Delo, città sacra e sede del Culto dell'Oracolo, che custodisce il Libro Sacro e comunica con i Creatori.</p></div>
-</div>
-<p style="max-width:40rem;margin-top:1.5rem">Tra i regni ci sono otto regioni indipendenti, e gilde e culti che intrecciano alleanze e rivalità. Chi gioca con noi entra in una storia già in corso, dove ogni scelta lascia conseguenze.</p></div></section>
-<section><div class="wrap"><h2>Seguici</h2><p>Annunci, foto e novità degli eventi escono sul nostro profilo <a href="https://www.instagram.com/land_of_ancient">Instagram @land_of_ancient</a>.</p></div></section>
-</main><footer><div class="wrap">Ordine degli Elementi APS. Gioco di ruolo dal vivo.
-<a href="https://www.instagram.com/land_of_ancient">Instagram @land_of_ancient</a> 
+```html
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>L'Ordine degli Elementi | GRV e LARP fantasy – Land of Ancient</title>
+
+  <meta name="description" content="L'Ordine degli Elementi APS organizza giochi di ruolo dal vivo (GRV/LARP) fantasy nel mondo di Land of Ancient. Scopri eventi, ambientazione e come partecipare.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://landofancient.github.io/ordine-degli-elementi/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="L'Ordine degli Elementi | GRV e LARP fantasy">
+  <meta property="og:description" content="Giochi di ruolo dal vivo (GRV/LARP) nel mondo fantasy di Land of Ancient. Eventi, ambientazione e avventure.">
+  <meta property="og:url" content="https://landofancient.github.io/ordine-degli-elementi/">
+  <meta property="og:image" content="https://landofancient.github.io/ordine-degli-elementi/assets/copertina.jpg">
+
+  <link rel="alternate" type="application/rss+xml" title="Eventi" href="feed.xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Uncial+Antiqua&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html">Ordine degli Elementi</a>
+
+    <nav>
+      <a href="index.html" aria-current="page">Chi siamo</a>
+      <a href="eventi.html">Eventi</a>
+      <a href="foto.html">Foto</a>
+      <a href="iscrizioni.html">Iscriviti</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- INTRODUZIONE -->
+
+  <div class="wrap hero">
+
+    <div>
+
+      <h1>L'Ordine degli Elementi</h1>
+
+      <p>
+        L'Ordine degli Elementi APS è un'associazione che organizza
+        giochi di ruolo dal vivo (GRV/LARP) fantasy. La nostra campagna,
+        ambientata nel mondo di Land of Ancient, va avanti da più di
+        dieci anni e la storia la scrivono i giocatori, evento dopo evento.
+      </p>
+
+      <a class="btn" href="eventi.html">Vedi gli eventi</a>
+      <a class="btn" href="iscrizioni.html">Iscriviti</a>
+
+    </div>
+
+    <img
+      src="assets/copertina.jpg"
+      width="1000"
+      height="1294"
+      alt="Illustrazione di copertina: un gruppo di avventurieri attorno a un tavolo con una mappa, e il logo dell'Ordine degli Elementi"
+    >
+
+  </div>
+
+
+  <!-- COS'È IL LARP -->
+
+  <section>
+
+    <div class="wrap cols">
+
+      <div>
+
+        <h2>Che cos'è un LARP?</h2>
+
+        <p>
+          Il LARP (Live Action Role-Playing), o gioco di ruolo dal vivo
+          (GRV), è un'esperienza in cui ogni partecipante interpreta
+          un personaggio all'interno di un mondo immaginario.
+          A differenza del gioco di ruolo da tavolo, ciò che accade
+          non viene soltanto raccontato: viene vissuto e interpretato
+          in prima persona.
+        </p>
+
+        <p>
+          Ci si muove, si dialoga, si prende parte agli eventi e si
+          affrontano le situazioni nei panni del proprio personaggio,
+          con costumi e oggetti coerenti con l'ambientazione.
+          Ogni scelta può cambiare il corso della storia.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h2>Come partecipare</h2>
+
+        <ol class="passi">
+
+          <li>
+            Scegli un evento nella pagina Eventi e iscriviti con il modulo.
+          </li>
+
+          <li>
+            Crea il tuo personaggio: razza, abilità e un background
+            che racconti chi è e cosa vuole.
+          </li>
+
+          <li>
+            Invia il background agli organizzatori almeno 10 giorni
+            prima dell'evento.
+          </li>
+
+        </ol>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- DOCUMENTI -->
+
+  <section>
+
+    <div class="wrap">
+
+      <h2>Documenti di gioco</h2>
+
+      <p>
+        Tutto quello che ti serve per entrare nel mondo di Land of Ancient:
+        consulta il regolamento per conoscere le regole di gioco e
+        l'ambientazione per scoprire la storia, i regni e il mondo
+        in cui si svolgono le nostre avventure.
+      </p>
+
+      <a class="btn" href="documenti/regolamento.pdf" target="_blank" rel="noopener">
+        📖 Scarica il Regolamento
+      </a>
+
+      <a class="btn" href="documenti/ambientazione.pdf" target="_blank" rel="noopener">
+        🌍 Scarica l'Ambientazione
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- LAND OF ANCIENT -->
+
+  <section>
+
+    <div class="wrap">
+
+      <h2>Il mondo di Land of Ancient</h2>
+
+      <p style="max-width:40rem">
+
+        Il mondo fu forgiato da Gaiathur e dalla Civiltà dei Creatori,
+        che lo permearono di una energia permanente: la magia.
+        Oggi è diviso in quattro grandi regni, ognuno legato a un elemento.
+
+        Secoli dopo la guerra contro i Manathull, creature di un altro
+        piano che si cibano dell'energia del mondo, i segni del loro
+        ritorno si moltiplicano e i popoli devono unirsi di nuovo.
+
+      </p>
+
+
+      <div class="porte" aria-label="I quattro grandi regni">
+
+        <div class="porta" tabindex="0" style="--c:var(--fuoco)">
+          <h2>Fuoco</h2>
+          <p>
+            Il Patriarcato del Fuoco ha capitale a Pianfuocato.
+            Il patriarca si sceglie tra i dieci Campioni, con una
+            sfida all'ultimo sangue. Oggi il trono è vuoto e restano
+            due Campioni a difendere il regno.
+          </p>
+        </div>
+
+
+        <div class="porta" tabindex="0" style="--c:var(--acqua)">
+          <h2>Acqua</h2>
+          <p>
+            Il Matriarcato dell'Acqua, guidato da Lady Awelta,
+            fu il più colpito dalla grande guerra. Il suo popolo,
+            aperto e pacifico, vive soprattutto di navigazione tra
+            Acquaviva, Fontesacra e Grandefiume.
+          </p>
+        </div>
+
+
+        <div class="porta" tabindex="0" style="--c:var(--terra)">
+          <h2>Terra</h2>
+          <p>
+            Il Matriarcato della Terra ha capitale a Lagorotto,
+            tra Boscofitto, Rocciascura e Riccocolle. Qui vivono
+            morfici, elfi silvani, umani e nani, e qui sono comparsi
+            i primi segnali del ritorno dei Manathull.
+          </p>
+        </div>
+
+
+        <div class="porta" tabindex="0" style="--c:var(--aria)">
+          <h2>Aria</h2>
+          <p>
+            Il Patriarcato dell'Aria ha capitale a Delo, città sacra
+            e sede del Culto dell'Oracolo, che custodisce il Libro
+            Sacro e comunica con i Creatori.
+          </p>
+        </div>
+
+      </div>
+
+
+      <p style="max-width:40rem;margin-top:1.5rem">
+
+        Tra i regni ci sono otto regioni indipendenti, e gilde e culti
+        che intrecciano alleanze e rivalità. Chi gioca con noi entra
+        in una storia già in corso, dove ogni scelta lascia conseguenze.
+
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- INSTAGRAM -->
+
+  <section>
+
+    <div class="wrap">
+
+      <h2>Seguici</h2>
+
+      <p>
+        Annunci, foto e novità degli eventi escono sul nostro profilo
+        <a href="https://www.instagram.com/land_of_ancient">
+          Instagram @land_of_ancient
+        </a>.
+      </p>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="wrap">
+
+    Ordine degli Elementi APS. Gioco di ruolo dal vivo.
+
+    <a href="https://www.instagram.com/land_of_ancient">
+      Instagram @land_of_ancient
+    </a>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
+```
