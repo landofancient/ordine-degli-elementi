@@ -42,3 +42,252 @@ footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--mute);font-si
 footer a{margin-left:1rem}
 @media(max-width:700px){.hero{grid-template-columns:1fr}.porte{flex-direction:column;height:auto}.porta p{max-height:none;opacity:1}.porta:hover,.porta:focus{flex:1}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+
+/* =========================================================
+   LAND OF ANCIENT - SFONDO ANIMATO DEI QUATTRO ELEMENTI
+   ========================================================= */
+
+body {
+  position: relative;
+  overflow-x: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(130, 90, 150, 0.10),
+      transparent 38%
+    ),
+    var(--ground);
+}
+
+
+/* ---------------------------------------------------------
+   AURE ELEMENTALI
+   --------------------------------------------------------- */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  background:
+
+    /* 🔥 FUOCO - alto sinistra */
+    radial-gradient(
+      circle at 4% 8%,
+      rgba(229, 57, 46, .28),
+      rgba(229, 57, 46, .12) 9%,
+      transparent 27%
+    ),
+
+    /* 💧 ACQUA - alto destra */
+    radial-gradient(
+      circle at 96% 8%,
+      rgba(76, 195, 214, .25),
+      rgba(76, 195, 214, .10) 9%,
+      transparent 27%
+    ),
+
+    /* 🌿 TERRA - basso sinistra */
+    radial-gradient(
+      circle at 4% 92%,
+      rgba(140, 192, 58, .24),
+      rgba(140, 192, 58, .10) 9%,
+      transparent 27%
+    ),
+
+    /* 🌬️ ARIA - basso destra */
+    radial-gradient(
+      circle at 96% 92%,
+      rgba(47, 179, 164, .24),
+      rgba(47, 179, 164, .10) 9%,
+      transparent 27%
+    );
+
+  animation: elementi-aura 18s ease-in-out infinite alternate;
+}
+
+
+/* ---------------------------------------------------------
+   PARTICELLE MAGICHE
+   --------------------------------------------------------- */
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: -10%;
+  pointer-events: none;
+  z-index: 0;
+
+  background-image:
+
+    /* 🔥 FUOCO */
+    radial-gradient(
+      circle,
+      rgba(229, 57, 46, .85) 0 2px,
+      transparent 3px
+    ),
+
+    radial-gradient(
+      circle,
+      rgba(255, 150, 50, .75) 0 1.5px,
+      transparent 3px
+    ),
+
+    /* 💧 ACQUA */
+    radial-gradient(
+      circle,
+      rgba(76, 195, 214, .80) 0 2px,
+      transparent 3px
+    ),
+
+    /* 🌿 TERRA */
+    radial-gradient(
+      circle,
+      rgba(140, 192, 58, .70) 0 2px,
+      transparent 3px
+    ),
+
+    /* 🌬️ ARIA */
+    radial-gradient(
+      circle,
+      rgba(220, 245, 255, .85) 0 1.5px,
+      transparent 3px
+    );
+
+  background-size:
+    190px 190px,
+    270px 270px,
+    230px 230px,
+    300px 300px,
+    210px 210px;
+
+  background-position:
+    0 0,
+    70px 100px,
+    120px 30px,
+    40px 160px,
+    150px 70px;
+
+  opacity: .48;
+
+  animation: particelle-elementi 24s linear infinite;
+}
+
+
+/* ---------------------------------------------------------
+   MOVIMENTO DELLE AURE
+   --------------------------------------------------------- */
+
+@keyframes elementi-aura {
+
+  0% {
+    transform: scale(1);
+    filter: blur(0);
+  }
+
+  50% {
+    transform: scale(1.04);
+    filter: blur(2px);
+  }
+
+  100% {
+    transform: scale(1.08);
+    filter: blur(0);
+  }
+}
+
+
+/* ---------------------------------------------------------
+   MOVIMENTO DELLE PARTICELLE
+   Verso il centro
+   --------------------------------------------------------- */
+
+@keyframes particelle-elementi {
+
+  0% {
+    background-position:
+      0 0,
+      70px 100px,
+      120px 30px,
+      40px 160px,
+      150px 70px;
+  }
+
+  25% {
+    background-position:
+      80px -70px,
+      -70px 50px,
+      80px 80px,
+      100px 60px,
+      -80px -60px;
+  }
+
+  50% {
+    background-position:
+      170px -150px,
+      -160px 0,
+      30px 150px,
+      180px -40px,
+      -180px -130px;
+  }
+
+  75% {
+    background-position:
+      260px -210px,
+      -250px -60px,
+      -40px 220px,
+      260px -100px,
+      -280px -190px;
+  }
+
+  100% {
+    background-position:
+      350px -270px,
+      -350px -100px,
+      -120px 300px,
+      350px -160px,
+      -380px -260px;
+  }
+}
+
+
+/* ---------------------------------------------------------
+   CONTENUTO SOPRA LO SFONDO
+   --------------------------------------------------------- */
+
+header,
+main,
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ---------------------------------------------------------
+   BAGLIORE MAGICO
+   --------------------------------------------------------- */
+
+h1,
+h2 {
+  text-shadow:
+    0 0 10px rgba(180, 150, 255, .16),
+    0 0 25px rgba(120, 100, 180, .10);
+}
+
+
+/* ---------------------------------------------------------
+   ACCESSIBILITÀ
+   --------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+  body::before,
+  body::after {
+    animation: none;
+  }
+
+}
