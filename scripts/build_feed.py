@@ -3,7 +3,7 @@ import json, datetime as dt
 from email.utils import format_datetime
 from xml.sax.saxutils import escape as x
 
-SITE_URL = "https://NOMEUTENTE.github.io/NOME-REPOSITORY"   # <-- modifica
+SITE_URL = "https://landofancient.github.io/NOME-REPOSITORY"   # <-- modifica
 
 ev = json.load(open("data/events.json", encoding="utf-8"))["events"]
 ev.sort(key=lambda e: e["date"], reverse=True)
